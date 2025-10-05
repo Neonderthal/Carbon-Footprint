@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Conscious - Track Your Environmental Impact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Carbon Conscious</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-color="#4A90E2" data-icon="🏠">Home</a></li>
+                <li><a href="#calculator" class="nav-link" data-color="#F5A623" data-icon="🧮">Calculator</a></li>
+                <li><a href="#tips" class="nav-link" data-color="#7ED321" data-icon="💡">Tips</a></li>
+                <li><a href="#rewards" class="nav-link" data-color="#BD10E0" data-icon="🏆">Rewards</a></li>
+                <li><a href="#about" class="nav-link" data-color="#50E3C2" data-icon="ℹ️">About</a></li>
+                <li><a href="#contact" class="nav-link" data-color="#D0021B" data-icon="📞">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-progress"></div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-background">
+                <div class="floating-particles"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Track Your Carbon Impact</h1>
+                <p class="hero-subtitle">Join 50,000+ users in creating a sustainable future. Calculate, track, and reduce your environmental footprint with our comprehensive platform.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary ripple-btn" onclick="showPage('calculator')">
+                        Calculate Your Footprint
+                    </button>
+                    <button class="btn btn--outline ripple-btn learn-more-btn">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="mission-section">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="mission-content">
+                    <p class="mission-description">Carbon Conscious empowers individuals and organizations to understand and reduce their environmental impact. Through advanced tracking tools, personalized recommendations, and community engagement, we're building a movement toward sustainable living.</p>
+                    <div class="mission-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50000">0</span>
+                            <span class="stat-label">Users Helped</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="125000">0</span>
+                            <span class="stat-label">Tons CO₂ Reduced</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="195">0</span>
+                            <span class="stat-label">Countries Covered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Stats Section -->
+        <div class="global-stats-section">
+            <div class="container">
+                <h2 class="section-title">Global Carbon Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" data-animation="fade-up">
+                        <div class="stat-trend">↗</div>
+                        <div class="stat-value">421</div>
+                        <div class="stat-unit">ppm</div>
+                        <div class="stat-description">Current Atmospheric CO₂</div>
+                    </div>
+                    <div class="stat-card" data-animation="fade-up" data-delay="200">
+                        <div class="stat-trend">📊</div>
+                        <div class="stat-value">4.8</div>
+                        <div class="stat-unit">tons</div>
+                        <div class="stat-description">Global Average Footprint</div>
+                    </div>
+                    <div class="stat-card" data-animation="fade-up" data-delay="400">
+                        <div class="stat-trend">🎯</div>
+                        <div class="stat-value">2.3</div>
+                        <div class="stat-unit">tons</div>
+                        <div class="stat-description">Target for 2030</div>
+                    </div>
+                    <div class="stat-card" data-animation="fade-up" data-delay="600">
+                        <div class="stat-trend">👥</div>
+                        <div class="stat-value">50,000+</div>
+                        <div class="stat-unit"></div>
+                        <div class="stat-description">Users Helped</div>
+                    </div>
+                    <div class="stat-card" data-animation="fade-up" data-delay="800">
+                        <div class="stat-trend">🌱</div>
+                        <div class="stat-value">125,000</div>
+                        <div class="stat-unit">tons</div>
+                        <div class="stat-description">CO₂ Reduced</div>
+                    </div>
+                    <div class="stat-card" data-animation="fade-up" data-delay="1000">
+                        <div class="stat-trend">🌍</div>
+                        <div class="stat-value">195</div>
+                        <div class="stat-unit"></div>
+                        <div class="stat-description">Countries Covered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="how-it-works-section">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step-card" data-animation="fade-up">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">🧮</div>
+                        <h3>Calculate</h3>
+                        <p>Enter your daily activities to get an accurate carbon footprint assessment</p>
+                    </div>
+                    <div class="step-card" data-animation="fade-up" data-delay="200">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">📈</div>
+                        <h3>Track</h3>
+                        <p>Monitor your progress over time and see improvements in your environmental impact</p>
+                    </div>
+                    <div class="step-card" data-animation="fade-up" data-delay="400">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">🌿</div>
+                        <h3>Reduce</h3>
+                        <p>Get personalized recommendations to lower your carbon footprint effectively</p>
+                    </div>
+                    <div class="step-card" data-animation="fade-up" data-delay="600">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">🏆</div>
+                        <h3>Achieve</h3>
+                        <p>Unlock rewards and milestones as you progress toward sustainability goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="carousel-section">
+            <div class="container">
+                <h2 class="section-title">Environmental Initiatives</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Forest landscape">
+                                <div class="carousel-caption">Protecting our forests</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape">
+                                <div class="carousel-caption">Preserving natural habitats</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80" alt="Ocean view">
+                                <div class="carousel-caption">Keeping oceans clean</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?auto=format&fit=crop&w=1200&q=80" alt="Solar panels">
+                                <div class="carousel-caption">Renewable energy future</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn carousel-next"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Page -->
+    <section id="calculator" class="page">
+        <div class="container">
+            <div class="calculator-header">
+                <h1>Carbon Footprint Calculator</h1>
+                <p>Answer a few questions to calculate your environmental impact</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-text">Step <span class="current-step">1</span> of <span class="total-steps">4</span></span>
+                </div>
+            </div>
+
+            <div class="calculator-content">
+                <div class="calculator-steps">
+                    <!-- Transportation Step -->
+                    <div class="calculator-step active" data-step="0">
+                        <div class="step-header">
+                            <div class="step-icon">🚗</div>
+                            <h2>Transportation</h2>
+                            <p>Tell us about your travel habits</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Miles driven per week</label>
+                                <input type="number" class="form-control" id="car_miles" placeholder="150">
+                                <div class="tooltip">Average American drives ~150 miles per week</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Hours of public transport per week</label>
+                                <input type="number" class="form-control" id="public_transport" placeholder="5">
+                                <div class="tooltip">Include buses, trains, and subways</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Flight hours per year</label>
+                                <input type="number" class="form-control" id="flights" placeholder="12">
+                                <div class="tooltip">Round-trip domestic flight ≈ 6 hours</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Energy Step -->
+                    <div class="calculator-step" data-step="1">
+                        <div class="step-header">
+                            <div class="step-icon">⚡</div>
+                            <h2>Energy Usage</h2>
+                            <p>How much energy do you consume?</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Monthly electricity bill ($)</label>
+                                <input type="number" class="form-control" id="electricity" placeholder="120">
+                                <div class="tooltip">Average US household pays ~$120/month</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Monthly heating bill ($)</label>
+                                <input type="number" class="form-control" id="heating" placeholder="80">
+                                <div class="tooltip">Include gas, oil, or electric heating</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Renewable energy percentage</label>
+                                <input type="range" class="form-control range-input" id="renewable" min="0" max="100" value="20">
+                                <div class="range-value">20%</div>
+                                <div class="tooltip">Solar, wind, or green energy programs</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diet Step -->
+                    <div class="calculator-step" data-step="2">
+                        <div class="step-header">
+                            <div class="step-icon">🍽️</div>
+                            <h2>Diet & Food</h2>
+                            <p>Your food choices impact the environment</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Meat meals per week</label>
+                                <input type="number" class="form-control" id="meat_meals" placeholder="10">
+                                <div class="tooltip">Include beef, pork, chicken, and fish</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Local food percentage</label>
+                                <input type="range" class="form-control range-input" id="local_food" min="0" max="100" value="30">
+                                <div class="range-value">30%</div>
+                                <div class="tooltip">Food grown within 100 miles</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Food waste percentage</label>
+                                <input type="range" class="form-control range-input" id="food_waste" min="0" max="100" value="25">
+                                <div class="range-value">25%</div>
+                                <div class="tooltip">How much food do you throw away?</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lifestyle Step -->
+                    <div class="calculator-step" data-step="3">
+                        <div class="step-header">
+                            <div class="step-icon">🏠</div>
+                            <h2>Lifestyle</h2>
+                            <p>Your daily habits and consumption</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Shopping frequency per month</label>
+                                <input type="number" class="form-control" id="shopping" placeholder="8">
+                                <div class="tooltip">Clothes, electronics, household items</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Recycling percentage</label>
+                                <input type="range" class="form-control range-input" id="recycling" min="0" max="100" value="60">
+                                <div class="range-value">60%</div>
+                                <div class="tooltip">How much of your waste do you recycle?</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Daily shower minutes</label>
+                                <input type="number" class="form-control" id="water_usage" placeholder="10">
+                                <div class="tooltip">Average shower is 8-10 minutes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-navigation">
+                    <button class="btn btn--outline ripple-btn" id="prev-step" disabled>Previous</button>
+                    <button class="btn btn--primary ripple-btn" id="next-step">Next</button>
+                    <button class="btn btn--primary ripple-btn hidden" id="calculate-btn">Calculate Results</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="calculator-results hidden">
+                <div class="results-header">
+                    <h2>Your Carbon Footprint Results</h2>
+                    <div class="total-emissions">
+                        <span class="emissions-number">0</span>
+                        <span class="emissions-unit">tons CO₂/year</span>
+                    </div>
+                </div>
+                
+                <div class="results-breakdown">
+                    <div class="category-result">
+                        <div class="category-header">
+                            <span class="category-icon">🚗</span>
+                            <span class="category-name">Transportation</span>
+                        </div>
+                        <div class="category-bar">
+                            <div class="category-fill" data-category="transportation"></div>
+                        </div>
+                        <span class="category-value">0 tons</span>
+                    </div>
+                    <div class="category-result">
+                        <div class="category-header">
+                            <span class="category-icon">⚡</span>
+                            <span class="category-name">Energy</span>
+                        </div>
+                        <div class="category-bar">
+                            <div class="category-fill" data-category="energy"></div>
+                        </div>
+                        <span class="category-value">0 tons</span>
+                    </div>
+                    <div class="category-result">
+                        <div class="category-header">
+                            <span class="category-icon">🍽️</span>
+                            <span class="category-name">Diet</span>
+                        </div>
+                        <div class="category-bar">
+                            <div class="category-fill" data-category="diet"></div>
+                        </div>
+                        <span class="category-value">0 tons</span>
+                    </div>
+                    <div class="category-result">
+                        <div class="category-header">
+                            <span class="category-icon">🏠</span>
+                            <span class="category-name">Lifestyle</span>
+                        </div>
+                        <div class="category-bar">
+                            <div class="category-fill" data-category="lifestyle"></div>
+                        </div>
+                        <span class="category-value">0 tons</span>
+                    </div>
+                </div>
+
+                <div class="recommendations">
+                    <h3>Personalized Recommendations</h3>
+                    <div id="recommendations-list"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn--primary ripple-btn" onclick="showPage('tips')">View Tips</button>
+                    <button class="btn btn--outline ripple-btn" onclick="resetCalculator()">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Page -->
+    <section id="rewards" class="page">
+        <div class="container">
+            <h1>Your Rewards & Achievements</h1>
+            <p class="page-subtitle">Track your progress and unlock new milestones</p>
+            
+            <div class="user-progress">
+                <div class="progress-card">
+                    <h3>Your Progress</h3>
+                    <div class="user-stats">
+                        <div class="user-stat">
+                            <span class="stat-number">400</span>
+                            <span class="stat-label">Total Points</span>
+                        </div>
+                        <div class="user-stat">
+                            <span class="stat-tier">Silver</span>
+                            <span class="stat-label">Current Tier</span>
+                        </div>
+                        <div class="user-stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Calculations</span>
+                        </div>
+                        <div class="user-stat">
+                            <span class="stat-number">8%</span>
+                            <span class="stat-label">Reduction</span>
+                        </div>
+                    </div>
+                    <div class="next-milestone">
+                        <h4>Next Achievement: Improvement Seeker</h4>
+                        <div class="milestone-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="progress-text">80% complete</span>
+                        </div>
+                        <p>Reduce your carbon footprint by 10% to unlock</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements-section">
+                <h2>Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card unlocked">
+                        <div class="achievement-badge">🥉</div>
+                        <div class="achievement-tier">Bronze</div>
+                        <h3>Getting Started</h3>
+                        <p>Complete your first carbon footprint calculation</p>
+                        <div class="achievement-points">+100 points</div>
+                        <div class="achievement-status">Unlocked!</div>
+                    </div>
+                    
+                    <div class="achievement-card unlocked">
+                        <div class="achievement-badge">🥈</div>
+                        <div class="achievement-tier">Silver</div>
+                        <h3>Consistent Tracker</h3>
+                        <p>Complete 5 carbon footprint calculations</p>
+                        <div class="achievement-points">+300 points</div>
+                        <div class="achievement-status">Unlocked!</div>
+                    </div>
+                    
+                    <div class="achievement-card locked">
+                        <div class="achievement-badge">📉</div>
+                        <div class="achievement-tier">Silver</div>
+                        <h3>Improvement Seeker</h3>
+                        <p>Reduce your carbon footprint by 10%</p>
+                        <div class="achievement-points">+400 points</div>
+                        <div class="achievement-progress">80% complete</div>
+                    </div>
+                    
+                    <div class="achievement-card locked">
+                        <div class="achievement-badge">🥇</div>
+                        <div class="achievement-tier">Gold</div>
+                        <h3>Dedicated User</h3>
+                        <p>Complete 10 carbon footprint calculations</p>
+                        <div class="achievement-points">+600 points</div>
+                        <div class="achievement-requirement">5/10 calculations</div>
+                    </div>
+                    
+                    <div class="achievement-card locked">
+                        <div class="achievement-badge">⚔️</div>
+                        <div class="achievement-tier">Gold</div>
+                        <h3>Climate Warrior</h3>
+                        <p>Reduce your carbon footprint by 25%</p>
+                        <div class="achievement-points">+800 points</div>
+                        <div class="achievement-requirement">Need 25% reduction</div>
+                    </div>
+                    
+                    <div class="achievement-card locked">
+                        <div class="achievement-badge">🏅</div>
+                        <div class="achievement-tier">Platinum</div>
+                        <h3>Sustainability Expert</h3>
+                        <p>Complete 20 calculations and maintain improvement</p>
+                        <div class="achievement-points">+1200 points</div>
+                        <div class="achievement-requirement">5/20 calculations</div>
+                    </div>
+                    
+                    <div class="achievement-card locked">
+                        <div class="achievement-badge">💎</div>
+                        <div class="achievement-tier">Diamond</div>
+                        <h3>Eco Champion</h3>
+                        <p>Achieve and maintain 50% footprint reduction</p>
+                        <div class="achievement-points">+2000 points</div>
+                        <div class="achievement-requirement">Need 50% reduction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h2>Community Leaderboard</h2>
+                <div class="leaderboard">
+                    <div class="leaderboard-item rank-1">
+                        <span class="rank">#1</span>
+                        <span class="user-name">EcoWarrior2024</span>
+                        <span class="user-badge">💎</span>
+                        <span class="user-points">2,850 pts</span>
+                    </div>
+                    <div class="leaderboard-item rank-2">
+                        <span class="rank">#2</span>
+                        <span class="user-name">GreenThumb</span>
+                        <span class="user-badge">🏅</span>
+                        <span class="user-points">2,340 pts</span>
+                    </div>
+                    <div class="leaderboard-item rank-3">
+                        <span class="rank">#3</span>
+                        <span class="user-name">ClimateFriend</span>
+                        <span class="user-badge">🥇</span>
+                        <span class="user-points">1,920 pts</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">#4</span>
+                        <span class="user-name">SustainableLiving</span>
+                        <span class="user-badge">🥇</span>
+                        <span class="user-points">1,680 pts</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">#5</span>
+                        <span class="user-name">CarbonCutter</span>
+                        <span class="user-badge">⚔️</span>
+                        <span class="user-points">1,450 pts</span>
+                    </div>
+                    <div class="leaderboard-item user-position">
+                        <span class="rank">#6</span>
+                        <span class="user-name">You</span>
+                        <span class="user-badge">🥈</span>
+                        <span class="user-points">400 pts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Page -->
+    <section id="tips" class="page">
+        <div class="container">
+            <h1>Reduce Your Carbon Footprint</h1>
+            <p class="page-subtitle">Simple changes that make a big difference</p>
+            
+            <div class="tips-grid">
+                <div class="tip-category" data-animation="fade-up">
+                    <div class="tip-header">
+                        <div class="tip-icon">🚗</div>
+                        <h3>Transportation</h3>
+                    </div>
+                    <ul class="tip-list">
+                        <li>Walk or bike for short trips</li>
+                        <li>Use public transportation</li>
+                        <li>Consider carpooling</li>
+                        <li>Work from home when possible</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-category" data-animation="fade-up" data-delay="200">
+                    <div class="tip-header">
+                        <div class="tip-icon">⚡</div>
+                        <h3>Energy</h3>
+                    </div>
+                    <ul class="tip-list">
+                        <li>Switch to LED bulbs</li>
+                        <li>Unplug devices when not in use</li>
+                        <li>Use programmable thermostats</li>
+                        <li>Consider solar panels</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-category" data-animation="fade-up" data-delay="400">
+                    <div class="tip-header">
+                        <div class="tip-icon">🍽️</div>
+                        <h3>Diet</h3>
+                    </div>
+                    <ul class="tip-list">
+                        <li>Eat less meat</li>
+                        <li>Buy local produce</li>
+                        <li>Reduce food waste</li>
+                        <li>Grow your own herbs</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-category" data-animation="fade-up" data-delay="600">
+                    <div class="tip-header">
+                        <div class="tip-icon">🏠</div>
+                        <h3>Lifestyle</h3>
+                    </div>
+                    <ul class="tip-list">
+                        <li>Buy less, choose quality</li>
+                        <li>Recycle and compost</li>
+                        <li>Use reusable bags</li>
+                        <li>Repair instead of replacing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="about-content">
+                <h1>About Carbon Conscious</h1>
+                <p class="about-intro">At Carbon Conscious, we believe awareness is the first step toward change. Our goal is to help individuals understand their carbon footprint and empower them to make sustainable lifestyle choices that protect our planet for future generations.</p>
+                
+                <div class="about-mission">
+                    <h2>Our Mission</h2>
+                    <p>To provide easy-to-use tools and actionable insights that help people reduce their environmental impact and create a more sustainable future.</p>
+                </div>
+                
+                <div class="about-values">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">🌍</div>
+                            <h3>Environmental Stewardship</h3>
+                            <p>We are committed to protecting our planet for future generations.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">📊</div>
+                            <h3>Data-Driven</h3>
+                            <p>Our recommendations are based on scientific research and real data.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <h3>Community</h3>
+                            <p>Together, we can make a greater impact than any individual effort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="page-subtitle">Join our community and stay updated on environmental initiatives</p>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary ripple-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@carbonconscious.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal hidden" id="learn-more-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Why Carbon Footprint Matters</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Your carbon footprint represents the total amount of greenhouse gases produced directly and indirectly by your actions. Understanding and reducing it is crucial for:</p>
+                <ul>
+                    <li><strong>Climate Protection:</strong> Reducing global warming and climate change</li>
+                    <li><strong>Air Quality:</strong> Improving local air quality and health</li>
+                    <li><strong>Resource Conservation:</strong> Using natural resources more efficiently</li>
+                    <li><strong>Future Generations:</strong> Preserving the planet for our children</li>
+                </ul>
+                <p>Small changes in your daily routine can make a significant difference. Start your journey today!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--primary ripple-btn" onclick="showPage('calculator')">Calculate Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading Carbon Conscious...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
